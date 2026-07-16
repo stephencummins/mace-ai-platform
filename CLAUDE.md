@@ -23,7 +23,8 @@ docs/
   architecture/   System architecture. v0.1 is read-only (baseline); v0.2 is the
                   working output. Do not edit v0.1 — supersede it in a new file.
   policy/         Routing policy. v1 → v2 progression; keep versions side by side.
-  bcm/            Business Continuity Management proposal.
+  bcm/            Business Capability Model — proposed capability "4.7 AI
+                  Platform & Operations" and its L3s.
   governance/     Exposure matrix + gate criteria (what ships, what's blocked).
 workorders/       Scoped units of work, one file each.
 packages/         Shared libs (auth, telemetry) — populated later, not yet.
@@ -50,3 +51,23 @@ packages/         Shared libs (auth, telemetry) — populated later, not yet.
 
 - `mace-mcp-style` — Phase 1, MCP façade over the MaceStyle Function.
 - `mace-mcp-pdms` — Phase 2, MCP façade over MaceyBot's SharePoint Site Creation.
+
+## Current state / resume here
+
+Last worked: 2026-07-16. Repo scaffolded and on `main` (no open branches).
+
+**Landed:**
+- Structure, `CLAUDE.md`, `HANDOVER-digital-ai-service.md`.
+- `docs/bcm/` — BCM proposal.
+- `docs/policy/` — routing policy v1 + v2 (v2 is the latest revision).
+- `workorders/WORKORDER-architecture-v0.2.md`.
+
+**Empty / next up:**
+- `docs/architecture/` — **blocked**: needs the v0.1 baseline dropped in
+  (`Claude Implementation Architecture v0.1 Draft.docx`) before the v0.2 work
+  order can be executed. That WO is the main next task.
+- `docs/governance/` — exposure matrix + gate criteria still to be written.
+- `packages/` — shared auth/telemetry libs, later.
+
+**Env note:** `gh` and `poppler` are not installed on this machine, so I can't
+open PRs programmatically or read the policy PDFs' contents here.
