@@ -54,20 +54,30 @@ packages/         Shared libs (auth, telemetry) — populated later, not yet.
 
 ## Current state / resume here
 
-Last worked: 2026-07-16. Repo scaffolded and on `main` (no open branches).
+Last worked: 2026-07-16 (town hall day). Repo scaffolded and on `main` (no open
+branches). **➡️ Read `docs/status/STATUS-2026-07-16.md` first** — it captures the
+town-hall intelligence, strategic ground truth (people, org, timelines,
+partnerships), what's been sent to whom, and how today changes the planned work.
 
 **Landed:**
 - Structure, `CLAUDE.md`, `HANDOVER-digital-ai-service.md`.
-- `docs/bcm/` — BCM proposal.
-- `docs/policy/` — routing policy v1 + v2 (v2 is the latest revision).
+- `docs/bcm/` — BCM proposal (sent to Tobias + Guy; Suketu after their pass).
+- `docs/policy/` — routing policy v1 + v2 (v2 sent to Tobias for business-case
+  pass; NOT yet to Adil).
 - `workorders/WORKORDER-architecture-v0.2.md`.
+- `docs/status/STATUS-2026-07-16.md`.
 
-**Empty / next up:**
+**Next up (see status doc "Impacts on planned work" for detail):**
 - `docs/architecture/` — **blocked**: needs the v0.1 baseline dropped in
   (`Claude Implementation Architecture v0.1 Draft.docx`) before the v0.2 work
-  order can be executed. That WO is the main next task.
-- `docs/governance/` — exposure matrix + gate criteria still to be written.
+  order runs. Note confirmed changes: gates G0–G4 → G1–G3 (Adil's model), and
+  add Agent Builder maker-path governance to §7 (now urgent).
+- `docs/governance/` — exposure matrix + gate criteria; plus a new **AI asset
+  catalogue entry format** artefact (for Matt Donnison / Digital Catalogue).
 - `packages/` — shared auth/telemetry libs, later.
+
+**Gate numbering (authoritative):** G1 = business case + data classification,
+G2 = architecture/security/DLP, G3 = pre-release assurance. Use everywhere.
 
 **Env note:** `gh` and `poppler` are not installed on this machine, so I can't
 open PRs programmatically or read the policy PDFs' contents here.
